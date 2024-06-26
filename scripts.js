@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray('.scroll-section').forEach(section => {
+    gsap.utils.toArray('.benefits, .features, .testimonials, .final-cta, .benefit-card, .feature, .testimonial').forEach(section => {
         gsap.to(section, {
             scrollTrigger: {
                 trigger: section,
