@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #2b2b2b;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,7 +79,7 @@ nav ul li a {
     display: inline-block;
     padding: 15px 30px;
     background-color: #007aff;
-    color: #2b2b2b;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -107,6 +107,7 @@ nav ul li a {
     padding: 20px;
     flex: 1;
     min-width: 250px;
+    margin: 10px; /* Margine orizzontale tra i riquadri */
     opacity: 0;
     transform: translateY(100px); /* Increase initial translation */
 }
@@ -127,13 +128,13 @@ nav ul li a {
 
 .final-cta {
     background-color: #007aff;
-    color: #2b2b2b;
+    color: #fff;
 }
 
 footer {
     padding: 20px 40px;
     background-color: #333;
-    color: #2b2b2b;
+    color: #fff;
     text-align: center;
 }
 
