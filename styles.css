@@ -118,7 +118,7 @@ nav ul li a {
 }
 
 .feature img {
-    max-width: 100%;
+    max-width: 20%;
     border-radius: 10px;
     height: auto; /* Mantiene le proporzioni dell'immagine */
 }
