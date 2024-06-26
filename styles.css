@@ -87,7 +87,6 @@ nav ul li a {
 
 .benefits, .features, .testimonials, .final-cta {
     padding: 60px 20px;
-    background-color: #fff;
     text-align: center;
     margin: 20px 0;
     opacity: 0;
@@ -102,7 +101,8 @@ nav ul li a {
 }
 
 .benefit-card, .feature, .testimonial {
-    background-color: #f5f5f5;
+    background-color: #333; /* Sfondo scuro */
+    color: #fff; /* Testo bianco */
     border-radius: 10px;
     padding: 20px;
     flex: 1;
