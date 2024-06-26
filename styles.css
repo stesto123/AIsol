@@ -94,7 +94,7 @@ nav ul li a {
     background-color: #1a1a1a; /* Sfondo scuro */
 }
 
-.benefit-cards, .feature, .testimonial-slider {
+.benefit-cards, .feature-list, .testimonial-slider {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
