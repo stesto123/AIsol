@@ -116,6 +116,7 @@ nav ul li a {
 .feature {
     display: flex;
     align-items: center;
+    margin-bottom: 20px; /* Spazio tra le features */
 }
 
 .feature-image {
