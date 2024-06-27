@@ -114,7 +114,7 @@ nav ul li a {
 
 /* Modifica qui per la disposizione in colonna */
 .features {
-    padding: 30px 10px;
+    padding: 60px 20px;
     text-align: center;
     margin: 40px 0; /* Spazio tra le sezioni */
     opacity: 0;
@@ -122,7 +122,7 @@ nav ul li a {
     background-color: #1a1a1a; /* Sfondo scuro */
     display: flex;
     flex-direction: column; /* Dispone gli elementi in colonna */
-    align-items: left; /* Centra gli elementi figli orizzontalmente */
+    align-items: center; /* Centra gli elementi figli orizzontalmente */
     background-image: url('sfondo_secondario.webp');
     background-size: cover;
     background-position: center;
@@ -193,3 +193,5 @@ footer ul li a {
     margin-top: 20px;
     /* Aggiungi il CSS per le icone social media */
 }
+
+
