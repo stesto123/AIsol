@@ -136,13 +136,14 @@ nav ul li a {
     margin-bottom: 20px;
     width: 100%; /* Imposta la larghezza al 100% */
     max-width: 800px; /* Opzionale: imposta una larghezza massima per controllare il layout */
-    background-color: #333; /* Ripristina il contorno scuro */
+    background-color: transparent; /* Sfondo trasparente */
     color: #f5f5f5; /* Testo chiaro */
     border-radius: 10px;
     padding: 20px;
     opacity: 0;
     transform: translateY(100px); /* Aumenta la traduzione iniziale */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
+    border: 1px solid #333; /* Contorno più sottile */
 }
 
 .feature-image {
