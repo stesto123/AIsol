@@ -112,7 +112,26 @@ nav ul li a {
     opacity: 0;
     transform: translateY(100px); /* Increase initial translation */
 }
+.features {
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+    justify-content: center; /* Centra gli elementi figli orizzontalmente */
+    align-items: flex-start; /* Allinea gli elementi figli all'inizio verticalmente */
+    background-image: url('sfondo_secondario.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%; /* Esempio di larghezza fissa, regola secondo necessità */
+}
+
+/* Regole nth-child come precedentemente definite */
 /* Allinea il primo elemento di ogni ciclo di tre a destra */
 .feature:nth-child(3n+1) {
     align-self: flex-end;
@@ -128,19 +147,6 @@ nav ul li a {
     align-self: flex-end;
 }
 
-.feature {
-    display: flex;
-    flex-direction: column;/* Disponi gli elementi uno sotto l'altro */
-    align-items: center;
-    margin-bottom: 20px; /* Spazio tra le features */
-}
-
-.features {
-    background-image: url('sfondo_secondario.webp'); /* Sostituisci con il percorso effettivo dell'immagine */
-    background-size: cover; /* Copre l'intera sezione senza perdere le proporzioni */
-    background-position: center; /* Centra l'immagine nella sezione */
-    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
-}
 
 .feature-image {
     flex: 1;
