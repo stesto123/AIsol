@@ -80,7 +80,7 @@ nav ul li a {
     background-color: #007aff;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
@@ -88,8 +88,8 @@ nav ul li a {
     padding: 60px 20px;
     text-align: center;
     margin: 40px 0; /* Spazio tra le sezioni */
-    opacity: 0;
-    transform: translateY(100px); /* Increase initial translation */
+    opacity: 1;
+    transform: translateY(0); /* Increase initial translation */
     background-color: #1a1a1a; /* Sfondo scuro */
 }
 
@@ -108,18 +108,19 @@ nav ul li a {
     flex: 1;
     min-width: 250px;
     margin: 10px; /* Margine orizzontale tra i riquadri */
-    opacity: 0;
-    transform: translateY(100px); /* Increase initial translation */
+    opacity: 1;
+    transform: translateY(0); /* Increase initial translation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
 }
 
 /* Modifica qui per la disposizione in colonna */
 .features {
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
     margin: 40px 0; /* Spazio tra le sezioni */
-    opacity: 0;
-    transform: translateY(100px); /* Increase initial translation */
-    background-color: #1a1a1a; /* Sfondo scuro */
+    opacity: 1;
+    transform: translateY(0); /* Increase initial translation */
+    background-color: #333; /* Sfondo scuro */
     display: flex;
     flex-direction: column; /* Dispone gli elementi in colonna */
     align-items: center; /* Centra gli elementi figli orizzontalmente */
@@ -131,37 +132,37 @@ nav ul li a {
 
 .feature {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     width: 100%; /* Imposta la larghezza al 100% */
     max-width: 800px; /* Opzionale: imposta una larghezza massima per controllare il layout */
-    background-color: transparent; /* Sfondo trasparente */
+    background-color: #333; 
     color: #f5f5f5; /* Testo chiaro */
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
-    opacity: 0;
-    transform: translateY(100px); /* Aumenta la traduzione iniziale */
+    opacity: 1;
+    transform: translateY(0); /* Aumenta la traduzione iniziale */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
     border: 1px solid #333; /* Contorno più sottile */
 }
 
 .feature-image {
-    width: 100%; /* Imposta la larghezza dell'immagine al 100% */
+    width: 40%; /* Imposta una larghezza fissa per l'immagine */
+    max-height: 150px; /* Limita l'altezza dell'immagine */
     text-align: center;
-    margin-bottom: 20px; /* Spazio tra l'immagine e il testo */
+    margin-right: 40px; /* Spazio tra l'immagine e il testo */
 }
 
 .feature-image img {
     max-width: 100%;
+    max-height: 150px; /* Mantiene l'altezza dell'immagine */
     border-radius: 10px;
     height: auto; /* Mantiene le proporzioni dell'immagine */
 }
 
 .feature-text {
-    width: 100%; /* Imposta la larghezza del testo al 100% */
+    width: 60%; /* Imposta la larghezza del testo al 60% */
     text-align: left;
-    padding: 20px; /* Aggiunge padding al testo */
 }
 
 .final-cta {
@@ -195,4 +196,70 @@ footer ul li a {
     /* Aggiungi il CSS per le icone social media */
 }
 
+.contacts {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px 0; /* Spazio tra le sezioni */
+    opacity: 1;
+    transform: translateY(0); /* Increase initial translation */
+    background-image: url('sfondo_secondario.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.contact-form, .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3d3d3; /* Sfondo grigio chiaro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    color: #2b2b2b; /* Testo scuro */
+}
+
+.contact-form form {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #2b2b2b;
+}
+
+.contact-form button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #007aff;
+    text-decoration: none;
+}
