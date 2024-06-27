@@ -120,7 +120,7 @@ nav ul li a {
 }
 
 .features {
-    background-image: url('sfondo_principale.webp'); /* Sostituisci con il percorso effettivo dell'immagine */
+    background-image: url('sfondo_secondario.webp'); /* Sostituisci con il percorso effettivo dell'immagine */
     background-size: cover; /* Copre l'intera sezione senza perdere le proporzioni */
     background-position: center; /* Centra l'immagine nella sezione */
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
