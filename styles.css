@@ -113,8 +113,24 @@ nav ul li a {
     transform: translateY(100px); /* Increase initial translation */
 }
 
+/* Allinea il primo elemento di ogni ciclo di tre a destra */
+.feature:nth-child(3n+1) {
+    align-self: flex-end;
+}
+
+/* Allinea il secondo elemento di ogni ciclo di tre a sinistra */
+.feature:nth-child(3n+2) {
+    align-self: flex-start;
+}
+
+/* Allinea il terzo elemento di ogni ciclo di tre a destra */
+.feature:nth-child(3n+3) {
+    align-self: flex-end;
+}
+
 .feature {
     display: flex;
+    flex-direction: column;/* Disponi gli elementi uno sotto l'altro */
     align-items: center;
     margin-bottom: 20px; /* Spazio tra le features */
 }
