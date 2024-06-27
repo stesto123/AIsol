@@ -128,7 +128,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    width: 30%; /* Esempio di larghezza fissa, regola secondo necessità */
+    width: 70%; /* Esempio di larghezza fissa, regola secondo necessità */
 }
 
 /* Regole nth-child come precedentemente definite */
