@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(section, {
             scrollTrigger: {
                 trigger: section,
-                start: 'top 80%',
+                start: 'top 90%',
                 toggleActions: 'play none none none'
             },
             opacity: 1,
