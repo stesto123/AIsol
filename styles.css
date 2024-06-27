@@ -149,6 +149,7 @@ nav ul li a {
 .feature-image {
     width: 100%; /* Imposta la larghezza dell'immagine al 100% */
     text-align: center;
+    margin-bottom: 20px; /* Spazio tra l'immagine e il testo */
 }
 
 .feature-image img {
