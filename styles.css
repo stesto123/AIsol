@@ -350,7 +350,7 @@ footer ul li a {
 /* Media Queries per Mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         padding: 20px;
     }
