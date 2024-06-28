@@ -280,43 +280,72 @@ footer ul li a {
     text-decoration: underline;
 }
 
-/* Nuova sezione per i servizi */
-#servizi {
-    padding: 60px 20px;
-    text-align: center;
-    margin: 40px 0; /* Spazio tra le sezioni */
-    background-color: #1a1a1a; /* Sfondo scuro */
-    opacity: 1;
-    transform: translateY(0); /* Iniziale */
-}
 
-.servizio {
-    background-color: #333; /* Sfondo scuro */
-    color: #f5f5f5; /* Testo chiaro */
-    border-radius: 10px;
+/* Stili per il contenitore del modulo */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Stili generali per i campi del modulo */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Stili specifici per i campi input */
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    height: 40px;
+}
+
+/* Stili specifici per il campo textarea */
+.form-container textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Stili per il bottone di invio */
+.form-container button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; /* Centra il bottone nel contenitore */
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per i label */
+.form-container label {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    font-weight: bold;
     text-align: left;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.servizio h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.servizio p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.servizio ul {
-    list-style-type: disc;
-    margin: 15px 0 0 20px;
-    padding: 0;
-}
-
-.servizio ul li {
-    margin-bottom: 10px;
 }
