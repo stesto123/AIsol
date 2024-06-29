@@ -168,7 +168,7 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.center-wrapper {
+.final-cta-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +229,8 @@ footer ul li a {
 
 .contacts {
     padding: 60px 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 40px 0; /* Spazio tra le sezioni */
     opacity: 1;
     transform: translateY(0); /* Increase initial translation */
@@ -242,8 +243,8 @@ footer ul li a {
 .contact-form, .contact-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #d3d3d3; /* Sfondo grigio chiaro */
+    justify-content: center;
     padding: 60px;
     border-radius: 10px;
     width: 100%;
@@ -291,6 +292,7 @@ footer ul li a {
 
 .contact-details p {
     margin: 10px 0;
+    align-self: center;
 }
 
 .contact-details a {
