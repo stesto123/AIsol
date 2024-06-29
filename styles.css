@@ -148,6 +148,7 @@ nav ul li a:hover {
     transform: translateY(0); /* Aumenta la traduzione iniziale */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
     border: 1px solid #333; /* Contorno più sottile */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
 }
 
 .feature-image {
@@ -155,8 +156,8 @@ nav ul li a:hover {
     max-height: 150px; /* Limita l'altezza dell'immagine */
     flex-direction: column;
     text-align: center;
-
     margin-right: 40px; /* Spazio tra l'immagine e il testo */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
 }
 
 .feature-image img {
@@ -169,6 +170,7 @@ nav ul li a:hover {
 .feature-text {
     width: 60%; /* Imposta la larghezza del testo al 60% */
     text-align: left;
+    box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
 }
 
 .final-cta-wrapper {
@@ -177,7 +179,6 @@ nav ul li a:hover {
     align-items: center;
     width: 100%; /* Occupa l'intera larghezza */
 }
-
 
 .final-cta {
     display: flex;
@@ -198,7 +199,7 @@ nav ul li a:hover {
 }
 
 /*on hover effect*/
-.benefit-card:hover, .testimonial:hover, .feature:hover,.center-wrapper:hover{
+.benefit-card:hover, .testimonial:hover, .feature:hover,.center-wrapper:hover {
     opacity: 0.8;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
@@ -409,7 +410,6 @@ footer ul li a {
         flex-direction: column;
     }
 
-
     .benefit-cards, .testimonial-slider {
         flex-direction: column;
         gap: 10px;
@@ -420,19 +420,22 @@ footer ul li a {
         align-items: center; /* Centra gli elementi figli orizzontalmente */
         text-align: center; /* Centra il testo all'interno del riquadro */
         margin: auto;
+        width: 90%; /* Imposta la larghezza al 90% */
+        box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
     }
-
 
     .feature-image {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
         flex-direction: column;
+        box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
     }
 
     .feature-text {
         width: 100%;
         flex-direction: column;
+        box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
     }
 
     .contact-form, .contact-details {
