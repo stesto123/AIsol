@@ -136,6 +136,7 @@ nav ul li a:hover {
 .feature {
     display: flex;
     align-items: center;
+    flex-direction: row;
     margin-bottom: 20px;
     width: 100%; /* Imposta la larghezza al 100% */
     max-width: 800px; /* Opzionale: imposta una larghezza massima per controllare il layout */
