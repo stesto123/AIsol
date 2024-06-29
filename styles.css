@@ -454,6 +454,8 @@ footer ul li a {
     .contact-form input, .contact-form textarea {
         padding: 10px;
         flex-direction: column;
+        box-sizing: border-box;
+
     }
 
     .contact-form button {
