@@ -352,14 +352,20 @@ footer ul li a {
 /* Media Queries per Mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: row-reverse;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: row; /* Imposta la direzione di flex a row per allineare logo e nav in una riga */
+        justify-content: space-between; /* Distribuisce lo spazio tra il logo e i link di navigazione */
+        align-items: center; /* Allinea verticalmente al centro */
         padding: 20px;
     }
 
     nav ul {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row; /* Mantiene i link di navigazione in una riga */
         gap: 10px;
+        list-style: none; /* Rimuove i punti elenco */
+        margin: 0; /* Rimuove il margine */
+        padding: 0; /* Rimuove il padding */
     }
 
     .hero-content h1 {
