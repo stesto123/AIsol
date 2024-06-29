@@ -403,7 +403,9 @@ footer ul li a {
     .cta-button {
         padding: 10px 20px;
         font-size: 16px;
+        flex-direction: column;
     }
+
 
     .benefit-cards, .testimonial-slider {
         flex-direction: column;
@@ -414,6 +416,7 @@ footer ul li a {
         flex-direction: column;
         text-align: center;
     }
+
 
     .feature-image {
         width: 100%;
@@ -427,14 +430,17 @@ footer ul li a {
 
     .contact-form, .contact-details {
         padding: 20px;
+        flex-direction: column;
     }
 
     .contact-form input, .contact-form textarea {
         padding: 10px;
+        flex-direction: column;
     }
 
     .contact-form button {
         padding: 10px;
         font-size: 14px;
+        flex-direction: column;
     }
 }
