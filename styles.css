@@ -244,6 +244,7 @@ footer ul li a {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    text-align: center;
 }
 
 .contact-form, .contact-details {
