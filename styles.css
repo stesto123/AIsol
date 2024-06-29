@@ -167,7 +167,7 @@ nav ul li a:hover {
 }
 
 .feature-text {
-    width: 60%; /* Imposta la larghezza del testo al 60% */
+    width: 100%; /* Imposta la larghezza del testo al 60% */
     text-align: left;
 }
 
@@ -422,16 +422,10 @@ footer ul li a {
     }
 
 
-    .feature-image {
-        width: 100%;
+    .feature-image, .feature-text {
         margin-right: 0;
         margin-bottom: 20px;
-        flex-direction: column;
-    }
-
-    .feature-text {
-        width: 100%;
-        flex-direction: column;
+        padding: 0 10px; /* Aggiunge un po' di spazio ai lati su schermi piccoli */
     }
 
     .contact-form, .contact-details {
