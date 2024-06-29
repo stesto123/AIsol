@@ -152,7 +152,9 @@ nav ul li a:hover {
 .feature-image {
     width: 40%; /* Imposta una larghezza fissa per l'immagine */
     max-height: 150px; /* Limita l'altezza dell'immagine */
+    flex-direction: column;
     text-align: center;
+
     margin-right: 40px; /* Spazio tra l'immagine e il testo */
 }
 
