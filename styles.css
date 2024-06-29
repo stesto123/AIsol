@@ -168,15 +168,37 @@ nav ul li a:hover {
     text-align: left;
 }
 
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Occupa l'intera larghezza */
+}
+
+
 .final-cta {
-    background-color: #007aff;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #113152;
     color: #fff;
+    border-radius: 20px;
 }
 
 /*on hover effect*/
-.benefit-card:hover, .testimonial:hover, .feature:hover {
+.benefit-card:hover, .testimonial:hover, .feature:hover,.center-wrapper:hover{
     opacity: 0.8;
     transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
 }
 
 footer {
