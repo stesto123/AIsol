@@ -423,7 +423,7 @@ footer ul li a {
         width: 90%; /* Imposta la larghezza al 90% */
         box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
         /* Aggiungi spazio tra i riquadri */
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .feature-image {
