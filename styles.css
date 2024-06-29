@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px; /* Decrease the top and bottom padding */
     background-color: #1a1a1a; /* Sfondo scuro */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
