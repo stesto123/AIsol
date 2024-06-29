@@ -149,6 +149,7 @@ nav ul li a:hover {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
     border: 1px solid #333; /* Contorno più sottile */
     box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
+    margin-bottom: 20px; /* Aggiungi spazio tra i riquadri */
 }
 
 .feature-image {
@@ -255,6 +256,7 @@ footer ul li a {
     max-width: 600px;
     margin: 10px auto;
     color: #2b2b2b; /* Testo scuro */
+    margin-bottom: 20px; /* Aggiungi spazio tra i riquadri */
 }
 
 .contact-form form {
@@ -422,8 +424,7 @@ footer ul li a {
         margin: auto;
         width: 90%; /* Imposta la larghezza al 90% */
         box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
-        /* Aggiungi spazio tra i riquadri */
-        margin-bottom: 40px;
+        margin-bottom: 20px; /* Aggiungi spazio tra i riquadri */
     }
 
     .feature-image {
@@ -443,20 +444,17 @@ footer ul li a {
     .contact-form, .contact-details {
         padding: 20px;
         flex-direction: column;
+        margin-bottom: 20px; /* Aggiungi spazio tra i riquadri */
     }
 
     .contact-form input, .contact-form textarea {
         padding: 10px;
         flex-direction: column;
-        box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
-
     }
 
     .contact-form button {
         padding: 10px;
         font-size: 14px;
         flex-direction: column;
-        box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
-
     }
 }
