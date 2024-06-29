@@ -414,7 +414,6 @@ footer ul li a {
 
     .feature {
         flex-direction: column;
-        text-align: center;
     }
 
 
@@ -422,10 +421,12 @@ footer ul li a {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
     .feature-text {
         width: 100%;
+        flex-direction: column;
     }
 
     .contact-form, .contact-details {
