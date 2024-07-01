@@ -39,12 +39,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.login a {
-    text-decoration: none;
-    color: #f5f5f5; /* Testo chiaro */
-    font-weight: 500;
-}
-
 .hero {
     background: url('sfondo_principale.webp') no-repeat center center/cover;
     color: #f5f5f5; /* Testo chiaro */
@@ -404,16 +398,20 @@ section#servizi {
     opacity: 1;
     transform: translateY(0); /* Increase initial translation */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
+    text-align: center;
+    list-style: none;
 }
 
 .servizio h3 {
     color: #f5f5f5;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .servizio p {
     margin: 0;
     line-height: 1.6;
+    text-align: left;
 }
 
 /* Media Queries per Mobile */
@@ -489,7 +487,6 @@ section#servizi {
         padding: 10px;
         flex-direction: column;
         box-sizing: border-box;
-
     }
 
     .contact-form button {
