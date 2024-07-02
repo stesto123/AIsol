@@ -380,7 +380,7 @@ footer ul li a {
 /* Sezione Servizi */
 section#servizi {
     background: #1a1a1a; /* Sfondo scuro */
-    display: flex;
+    display: block;
     padding: 60px 20px;
     text-align: center;
     margin: 0px 0; /* Spazio tra le sezioni */
@@ -408,6 +408,8 @@ section#servizi {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Aggiungi la transizione per l'animazione */
     text-align: left;
     list-style: none;
+    width: 60%;
+    display:inline-table;
 }
 
 .servizio h3 {
@@ -420,6 +422,21 @@ section#servizi {
     margin: 0;
     line-height: 1.6;
     text-align: left;
+}
+
+.servizio ul {
+    padding-left: 30%; /* Sposta l'intera lista verso destra per lasciare spazio ai bullet point */
+}
+
+/* Stile per il link */
+ul li a {
+    color: #f5f5f5; /* Colore del testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura iniziale */
+}
+
+/* Stile per il link quando si passa sopra con il mouse */
+ul li a:hover {
+    text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
 }
 
 /* Media Queries per Mobile */
