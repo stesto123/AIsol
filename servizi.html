@@ -14,13 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AISOL - Rivoluziona il Tuo Business con l'Intelligenza Artificiale</title>
     <link rel="icon" href="logo.png" type="image/png">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="logo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .en { display: none; }
+        .it { display: block; }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -30,17 +28,24 @@
                 <img src="logo.png" alt="AISOL Logo" style="height: 75px;">
             </a>
         </div>
-        <nav>
+        <nav class="it">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="servizi.html">Servizi</a></li>
                 <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
+        <nav class="en">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Services</a></li>
+                <li><a href="contatti.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="servizi">
+        <section id="servizi" class="it">
             <h2>I Nostri Servizi</h2>
 
             <div class="servizio">
@@ -82,6 +87,70 @@
                 </ul>
             </div>
         </section>
+        
+        <section id="servizi" class="en">
+            <h2>Our Services</h2>
+
+            <div class="servizio">
+                <h3>Advanced Analysis with Artificial Intelligence</h3>
+                <p>Our artificial intelligence technology deeply analyzes collected reviews.</p>
+                <p>This process allows you to extract valuable insights and better understand the needs and expectations of your customers.</p>
+                <ul>
+                    <li>Analysis of over 30 indicators for each review</li>
+                    <li>Identification of emerging trends and recurring issues</li>
+                    <li>Segmentation of reviews by specific categories</li>
+                    <li>Generation of detailed reports and interactive visualizations</li>
+                </ul>
+            </div>
+            <div class="servizio">
+                <h3>Review Aggregation</h3>
+                <p>We collect and unify reviews from platforms such as Google, Tripadvisor, and many others, allowing for a comprehensive and centralized view of customer opinions.</p>
+                <p>Our system guarantees:</p>
+                <ul>
+                    <li>Accurate and timely data collection</li>
+                    <li>Multi-platform support</li>
+                    <li>Consolidation of data into a single centralized dashboard</li>
+                </ul>
+            </div>
+            <div class="servizio">
+                <h3>Interactive and Customized Reports</h3>
+                <p>We offer detailed and interactive reports, customizable based on your specific needs. Our reports allow you to view data in various formats, including charts, tables, and dashboards, providing a complete overview of your business performance.</p>
+                <ul>
+                    <li>Interactive dashboards with customizable key metrics</li>
+                    <li>Dynamic charts and tables for clear data visualization</li>
+                    <li>Ability to export reports in various formats (PDF, Excel, CSV)</li>
+                </ul>
+            </div>
+            <div class="servizio">
+                <h3>Contact Us</h3>
+                <p>For more information about our services or to request a personalized demo, please contact us through the contact form. Our team is available to answer all your questions and provide support in choosing the best solution for your needs.</p>
+                <p>Be among our first customers and access exclusive discounts</p>
+                <ul>
+                    <li><a href="contatti.html">Click to contact us!</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("en")) {
+                document.querySelectorAll('.it').forEach(function(el) {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.en').forEach(function(el) {
+                    el.style.display = 'block';
+                });
+            } else {
+                document.querySelectorAll('.en').forEach(function(el) {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.it').forEach(function(el) {
+                    el.style.display = 'block';
+                });
+            }
+        });
+    </script>
 </body>
 </html>

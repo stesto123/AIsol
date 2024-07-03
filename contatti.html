@@ -27,6 +27,21 @@
     <!-- Altri tag per supportare diverse piattaforme -->
     <title>Contatti - AISOL</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function setLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('en')) {
+                document.documentElement.lang = 'en';
+                document.getElementById('content-it').style.display = 'none';
+                document.getElementById('content-en').style.display = 'block';
+            } else {
+                document.documentElement.lang = 'it';
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('content-it').style.display = 'block';
+            }
+        }
+        window.onload = setLanguage;
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -45,31 +60,63 @@
         </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section id="contatti" class="contacts scroll-section">
-        <h2>Contattaci</h2>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/xnnaakwn" method="post">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Messaggio</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="cta-button">Invia</button>
-            </form>
-        </div>
-        <div class="contact-details">
-            <p>Contattaci direttamente via email:</p>
-            <p>Email: <a href="mailto:info@aisol.it">info@aisol.it</a></p>
-        </div>
-    </section>
+    <!-- Content in Italian -->
+    <div id="content-it">
+        <!-- Contact Section -->
+        <section id="contatti" class="contacts scroll-section">
+            <h2>Contattaci</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xnnaakwn" method="post">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Invia</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <p>Contattaci direttamente via email:</p>
+                <p>Email: <a href="mailto:info@aisol.it">info@aisol.it</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Content in English -->
+    <div id="content-en" style="display: none;">
+        <!-- Contact Section -->
+        <section id="contact" class="contacts scroll-section">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xnnaakwn" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <p>Contact us directly via email:</p>
+                <p>Email: <a href="mailto:info@aisol.it">info@aisol.it</a></p>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     

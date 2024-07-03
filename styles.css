@@ -92,10 +92,12 @@ nav ul li a:hover {
     background-color: #1a1a1a; /* Sfondo scuro */
 }
 
-.benefit-cards, .testimonial-slider {
+
+.benefit-cards.it,
+.benefit-cards.en{
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap; /* Non permettere il wrapping degli elementi */
+    flex-wrap: nowrap; 
     gap: 20px;
 }
 
@@ -194,7 +196,7 @@ nav ul li a:hover {
 }
 
 /*on hover effect*/
-.benefit-card:hover, .testimonial:hover, .feature:hover,.center-wrapper:hover {
+.benefit-card:hover, .testimonial:hover, .feature:hover, .center-wrapper:hover {
     opacity: 0.8;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
@@ -393,7 +395,6 @@ section#servizi {
     background-repeat: no-repeat;
     text-align: center;
     /* voglio un box per riga, il box deve occupare il 70% dello spazio */
-
 }
 
 .servizio {
@@ -472,7 +473,7 @@ ul li a:hover {
         flex-direction: column;
     }
 
-    .benefit-cards, .testimonial-slider {
+    .benefit-cards.it,.benefit-cards.en {
         flex-direction: column;
         gap: 10px;
     }
